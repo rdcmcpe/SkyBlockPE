@@ -88,8 +88,8 @@ class ClaimSubCommand extends SubCommand{
 				$sender->sendMessage(TextFormat::GREEN . "You are now the owner of " . TextFormat::WHITE . $plot);
 				// chest
 				$position = $this->getPlugin()->getPlotPosition($plot);
-				// debug
-				$position = $player->getPosition();
+				
+/*				$position = $player->getPosition();
 				$position instanceof Position;
 				$chest = $position->getLevel()->getBlock(new Vector3(floor($position->getX()), 30 + (69 - 64), floor($position->getZ())));
 				$position->getLevel()->setBlock(new Vector3(floor($position->getX()), 30 + (69 - 64), floor($position->getZ())), new Block(Block::CHEST), true, true);
@@ -107,4 +107,4 @@ class ClaimSubCommand extends SubCommand{
 		}
 		return true;
 	}
-}
+/*}
