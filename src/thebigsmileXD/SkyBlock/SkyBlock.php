@@ -406,7 +406,7 @@ class SkyBlock extends PluginBase implements Listener{
 	}
 
 	public function onDisable(){
-		$this->dataProvider->close();
+		//$this->dataProvider->close();
 		$this->getLogger()->info(TextFormat::GREEN . "Saving islands");
 		$this->getLogger()->info(TextFormat::BLUE . "Disabled the SkyBlock framework!");
 	}
